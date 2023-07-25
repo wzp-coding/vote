@@ -11,6 +11,7 @@ import Layout from "./pages/layout";
 import Create from "./pages/create";
 import Record from "./pages/record";
 import My from "./pages/my";
+import Login from "./pages/login";
 
 import "./common/styles/index.less";
 
@@ -30,6 +31,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Routes>
             <Route path='/' element={<Layout />}>
               <Route index element={<Index />} />
+              <Route path='login' element={<Login />} />
               <Route path='create' element={<Create />} />
               <Route path='record' element={<Record />} />
               <Route path='my' element={<My />} />
