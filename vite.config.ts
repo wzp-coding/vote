@@ -12,7 +12,11 @@ export default defineConfig({
     },
     postcss: {
       plugins: [
-        pxtorem(),
+        pxtorem({
+          rootValue: 16, // 根据设计稿的尺寸调整
+          propList: ['*'],
+          selectorBlackList: ['.ignore-rem'], // 忽略转换的类名
+        }),
       ],
     },
   },

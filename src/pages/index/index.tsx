@@ -1,5 +1,10 @@
-import './index.less'
+import "./index.less";
+import { Button } from "antd-mobile";
 
 export default function IndexPage() {
-    return <div className="index">IndexPage</div>
+  return (
+    <div className='index'>
+      <Button color='primary'>IndexPage</Button>
+    </div>
+  );
 }
